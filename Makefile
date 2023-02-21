@@ -1,2 +1,2 @@
-file: main.c
-	gcc -Wall -Werror -o main main.c
+enter: geom.c
+	gcc -Wall -Werror -o geom geom.c
