@@ -10,15 +10,6 @@ struct point
 };
 typedef struct point point;
 
-struct triangle
-{
-	point apex1;
-	point apex2;
-	point apex3;
-	point checkApex;
-};
-typedef struct triangle triangle;
-
 struct circle
 {
 	point center;
@@ -86,6 +77,7 @@ int main(int argc, char **argv)
 	file = fopen("enter.txt", "r");
 	char str[100];
 	fgets(str, 99, file);
+	printf("%s\n",str);
 	if (isObject(str))
 		printf("Ошибка на элементе 0: Неправильный ввод названия объекта\n");
 	else if (isArguments(str))
